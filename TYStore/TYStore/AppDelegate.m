@@ -2,21 +2,46 @@
 //  AppDelegate.m
 //  TYStore
 //
-//  Created by ZhangSx on 15/4/25.
-//  Copyright (c) 2015年 ZhangSx. All rights reserved.
+//  Created by Lw on 15/4/24.
+//  Copyright (c) 2015年 shencw. All rights reserved.
 //
 
 #import "AppDelegate.h"
+#import "HomeViewController.h"
+#import "SlideViewController.h"
 
-@interface AppDelegate ()
+@interface AppDelegate ()<RESideMenuDelegate>
 
 @end
 
 @implementation AppDelegate
-
+@synthesize nav;
+@synthesize sideMenuViewController;
+@synthesize slideVC;
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
+    
+    HomeViewController *homeVC = [[HomeViewController alloc] init];
+    nav = [[SlideNavigationController alloc] initWithRootViewController:homeVC];
+    
+    self.slideVC = [[SlideViewController alloc] init];
+    
+    self.sideMenuViewController = [[RESideMenu alloc] initWithContentViewController:nav
+                                                                    leftMenuViewController:slideVC
+                                                                   rightMenuViewController:nil];
+    sideMenuViewController.backgroundImage = [UIImage imageNamed:@"Stars"];
+    sideMenuViewController.menuPreferredStatusBarStyle = 1; // UIStatusBarStyleLightContent
+    sideMenuViewController.delegate = self;
+    sideMenuViewController.contentViewShadowEnabled = YES;
+    sideMenuViewController.scaleContentView = NO;
+    sideMenuViewController.open = YES;
+    sideMenuViewController.interactivePopGestureRecognizerEnabled = NO;
+    
+    self.window.rootViewController = sideMenuViewController;
+    [self.window makeKeyAndVisible];
+    
     return YES;
 }
 
@@ -40,6 +65,30 @@
 
 - (void)applicationWillTerminate:(UIApplication *)application {
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
+}
+
+
+#pragma mark -
+#pragma mark RESideMenu Delegate
+
+- (void)sideMenu:(RESideMenu *)sideMenu willShowMenuViewController:(UIViewController *)menuViewController
+{
+    NSLog(@"willShowMenuViewController: %@", NSStringFromClass([menuViewController class]));
+}
+
+- (void)sideMenu:(RESideMenu *)sideMenu didShowMenuViewController:(UIViewController *)menuViewController
+{
+    NSLog(@"didShowMenuViewController: %@", NSStringFromClass([menuViewController class]));
+}
+
+- (void)sideMenu:(RESideMenu *)sideMenu willHideMenuViewController:(UIViewController *)menuViewController
+{
+    NSLog(@"willHideMenuViewController: %@", NSStringFromClass([menuViewController class]));
+}
+
+- (void)sideMenu:(RESideMenu *)sideMenu didHideMenuViewController:(UIViewController *)menuViewController
+{
+    NSLog(@"didHideMenuViewController: %@", NSStringFromClass([menuViewController class]));
 }
 
 @end
