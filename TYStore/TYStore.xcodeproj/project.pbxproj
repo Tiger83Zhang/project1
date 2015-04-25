@@ -35,6 +35,7 @@
 /* Begin PBXFileReference section */
 		0A83A39C1AEB8A7C00CD8DEB /* BaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseViewController.h; sourceTree = "<group>"; };
 		0A83A39D1AEB8A7C00CD8DEB /* BaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseViewController.m; sourceTree = "<group>"; };
+		0A83A39F1AEB8CEC00CD8DEB /* config.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = config.h; sourceTree = "<group>"; };
 		FEB069881AEB827600CB5414 /* TYStore.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TYStore.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FEB0698C1AEB827600CB5414 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FEB0698D1AEB827600CB5414 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -111,6 +112,7 @@
 		FEB0698A1AEB827600CB5414 /* TYStore */ = {
 			isa = PBXGroup;
 			children = (
+				0A83A39F1AEB8CEC00CD8DEB /* config.h */,
 				0A83A39B1AEB88FE00CD8DEB /* Controllers */,
 				FEB0698F1AEB827600CB5414 /* AppDelegate.h */,
 				FEB069901AEB827600CB5414 /* AppDelegate.m */,
