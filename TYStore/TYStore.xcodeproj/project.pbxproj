@@ -78,6 +78,13 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0A83A39B1AEB88FE00CD8DEB /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
 		FEB0697F1AEB827600CB5414 = {
 			isa = PBXGroup;
 			children = (
@@ -99,6 +106,7 @@
 		FEB0698A1AEB827600CB5414 /* TYStore */ = {
 			isa = PBXGroup;
 			children = (
+				0A83A39B1AEB88FE00CD8DEB /* Controllers */,
 				FEB0698F1AEB827600CB5414 /* AppDelegate.h */,
 				FEB069901AEB827600CB5414 /* AppDelegate.m */,
 				FEB069921AEB827600CB5414 /* ViewController.h */,
