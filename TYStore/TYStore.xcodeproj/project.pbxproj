@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0A83A39E1AEB8A7C00CD8DEB /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A83A39D1AEB8A7C00CD8DEB /* BaseViewController.m */; };
 		FEB0698E1AEB827600CB5414 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FEB0698D1AEB827600CB5414 /* main.m */; };
 		FEB069911AEB827600CB5414 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FEB069901AEB827600CB5414 /* AppDelegate.m */; };
 		FEB069941AEB827600CB5414 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FEB069931AEB827600CB5414 /* ViewController.m */; };
@@ -32,6 +33,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0A83A39C1AEB8A7C00CD8DEB /* BaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseViewController.h; sourceTree = "<group>"; };
+		0A83A39D1AEB8A7C00CD8DEB /* BaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseViewController.m; sourceTree = "<group>"; };
 		FEB069881AEB827600CB5414 /* TYStore.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TYStore.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FEB0698C1AEB827600CB5414 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FEB0698D1AEB827600CB5414 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -81,6 +84,8 @@
 		0A83A39B1AEB88FE00CD8DEB /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				0A83A39C1AEB8A7C00CD8DEB /* BaseViewController.h */,
+				0A83A39D1AEB8A7C00CD8DEB /* BaseViewController.m */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -258,6 +263,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FEB069941AEB827600CB5414 /* ViewController.m in Sources */,
+				0A83A39E1AEB8A7C00CD8DEB /* BaseViewController.m in Sources */,
 				FEB069911AEB827600CB5414 /* AppDelegate.m in Sources */,
 				FEB0698E1AEB827600CB5414 /* main.m in Sources */,
 			);
