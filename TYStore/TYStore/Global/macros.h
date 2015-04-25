@@ -87,3 +87,5 @@
 #define ESIGNDIR(s) [[NSString stringWithFormat:@"%@/Library/Cache/Images/%@",NSHomeDirectory(),s] appSubDir]
 
 #define CUSTOMPHOTO(s) [NSString stringWithFormat:@"%@/Images/%@",[NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) objectAtIndex:0],s]
+
+#define DATA_DIR [NSSearchPathForDirectoriesInDomains(NSCachesDirectory, NSUserDomainMask, YES) objectAtIndex:0]
